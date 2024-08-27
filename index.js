@@ -38,11 +38,12 @@ app.get('/api/items', (req, res) => {
   });
 
   app.use(express.json());
-
+//validatoin git
 app.post('/api/items', (req, res) => {
   const newItem = req.body;
   items.push(newItem);
   res.status(201).json(newItem);
 });
+
 
 
